@@ -10,7 +10,7 @@ This repository  contains all the code and datasets
 Description:  Each dataset folder contains four different adversarial datasets.  
 ### Dataset Statistics
 |  Corpus   | original | stability |  sensitivity | diversity | extensibility |
-|  ----  | ----  |
+|  ----  | ----  | ----  | ----  | ----  | ----  |
 | Mutual  | 7,688 |  10,632 |  10,620 |  17,700 |  7,688 |
 | Ubuntu  | 100,000 |  1,500,000 |  1,400,370 |  2,484,550 |  100,000 |
 | Douban  | 10,000 |  30,000 |  24,720 |  42,950 |  10,000 |
