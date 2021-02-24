@@ -1,0 +1,106 @@
+================================================================================
+Config: model=electra, trial 1/1
+================================================================================
+answerable_classifier True
+answerable_uses_start_logits True
+answerable_weight 0.5
+beam_size 20
+corpus mutual
+data_dir dataset
+debug False
+do_eval True
+do_lower_case True
+do_train True
+doc_stride 128
+double_unordered True
+embedding_size None
+eval_batch_size 2
+gcp_project None
+gpu 0
+init_checkpoint pretrainBERT/electra_base_en
+iterations_per_loop 10
+joint_prediction True
+keep_all_models True
+layerwise_lr_decay 0.8
+learning_rate 0.0001
+log_examples False
+max_answer_length 30
+max_query_length 64
+max_seq_length 60
+model_dir OUTBERT/mutual/electra
+model_hparam_overrides {}
+model_name electra
+model_size base
+n_best_size 20
+n_writes_test 5
+num_tpu_cores 1
+num_train_epochs 3
+num_trials 1
+predict_batch_size 2
+preprocessed_data_dir recordset/mutual/electra
+qa_eval_file <built-in method format of str object at 0x7fa82a5fc7e8>
+qa_na_file <built-in method format of str object at 0x7fa8294149d0>
+qa_na_threshold -2.75
+qa_preds_file <built-in method format of str object at 0x7fa82a5fc988>
+raw_data_dir <built-in method format of str object at 0x7fa82a6024e0>
+results_pkl dataset/models/electra/results/conv_results.pkl
+results_txt OUTBERT/mutual/electra/results.txt
+save_checkpoints_steps 10
+task_names ['conv']
+test_predictions <built-in method format of str object at 0x7fa82940f7b0>
+tfrecords_dir recordset
+tpu_job_name None
+tpu_name None
+tpu_zone None
+train_batch_size 2
+use_tfrecords_if_existing True
+use_tpu False
+vocab_file pretrainBERT/electra_base_en/vocab.txt
+vocab_size 30522
+warmup_proportion 0.1
+weight_decay_rate 0.01
+write_test_outputs False
+
+Loading dataset conv_train
+================================================================================
+Start training: model=electra, trial 1/1
+================================================================================
+Training for 150 steps
+Building model...
+Building complete
+2020-12-22 09:30:21.346365: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-12-22 09:30:21.368104: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2899885000 Hz
+2020-12-22 09:30:21.370563: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561ac94a4770 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-22 09:30:21.370631: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+10/150 = 6.7%, SPS: 0.6, ELAP: 16, ETA: 3:43 - loss: 1.0129
+20/150 = 13.3%, SPS: 0.7, ELAP: 27, ETA: 2:58 - loss: 5.1982
+30/150 = 20.0%, SPS: 0.8, ELAP: 39, ETA: 2:36 - loss: 4.1945
+40/150 = 26.7%, SPS: 0.8, ELAP: 51, ETA: 2:20 - loss: 1.5945
+50/150 = 33.3%, SPS: 0.8, ELAP: 1:03, ETA: 2:06 - loss: 11.3655
+60/150 = 40.0%, SPS: 0.8, ELAP: 1:15, ETA: 1:52 - loss: 0.0477
+70/150 = 46.7%, SPS: 0.8, ELAP: 1:27, ETA: 1:39 - loss: 5.0076
+80/150 = 53.3%, SPS: 0.8, ELAP: 1:39, ETA: 1:26 - loss: 3.2482
+90/150 = 60.0%, SPS: 0.8, ELAP: 1:51, ETA: 1:14 - loss: 0.0697
+100/150 = 66.7%, SPS: 0.8, ELAP: 2:03, ETA: 1:01 - loss: 2.5697
+110/150 = 73.3%, SPS: 0.8, ELAP: 2:15, ETA: 49 - loss: 0.1901
+120/150 = 80.0%, SPS: 0.8, ELAP: 2:27, ETA: 37 - loss: 7.0265
+130/150 = 86.7%, SPS: 0.8, ELAP: 2:39, ETA: 24 - loss: 0.0442
+140/150 = 93.3%, SPS: 0.8, ELAP: 2:51, ETA: 12 - loss: 0.0344
+150/150 = 100.0%, SPS: 0.8, ELAP: 3:03, ETA: 0 - loss: 0.0298
+150/150 = 100.0%, SPS: 0.8, ELAP: 3:03, ETA: 0
+
+================================================================================
+Run dev set evaluation: model=electra, trial 1/1
+================================================================================
+Evaluating conv
+Loading dataset conv_dev
+Building model...
+Building complete
+Building model...
+Building complete
+Building model...
+Building complete
+Building model...
+Building complete
+Building model...
+Building complete

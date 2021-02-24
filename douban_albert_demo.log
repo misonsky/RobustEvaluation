@@ -1,0 +1,352 @@
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f6f2d0fc7b8>) includes params argument, but params are not passed to Estimator.
+W1129 16:56:01.812258 140116568487744 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f6f2d0fc7b8>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_experimental_distribute': None, '_tf_random_seed': None, '_service': None, '_log_step_count_steps': None, '_device_fn': None, '_keep_checkpoint_max': 0, '_evaluation_master': '', '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_num_ps_replicas': 0, '_task_type': 'worker', '_model_dir': 'OUTBERT/douban/ALBERT', '_cluster': None, '_session_creation_timeout_secs': 7200, '_master': '', '_is_chief': True, '_eval_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_save_checkpoints_secs': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f6f2bbeeba8>, '_tpu_config': TPUConfig(iterations_per_loop=10, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_save_summary_steps': 100, '_protocol': None, '_train_distribute': None, '_num_worker_replicas': 1, '_global_id_in_cluster': 0, '_task_id': 0, '_experimental_max_worker_delay_secs': None, '_save_checkpoints_steps': 10}
+I1129 16:56:01.812870 140116568487744 estimator.py:212] Using config: {'_experimental_distribute': None, '_tf_random_seed': None, '_service': None, '_log_step_count_steps': None, '_device_fn': None, '_keep_checkpoint_max': 0, '_evaluation_master': '', '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_num_ps_replicas': 0, '_task_type': 'worker', '_model_dir': 'OUTBERT/douban/ALBERT', '_cluster': None, '_session_creation_timeout_secs': 7200, '_master': '', '_is_chief': True, '_eval_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_save_checkpoints_secs': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f6f2bbeeba8>, '_tpu_config': TPUConfig(iterations_per_loop=10, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_save_summary_steps': 100, '_protocol': None, '_train_distribute': None, '_num_worker_replicas': 1, '_global_id_in_cluster': 0, '_task_id': 0, '_experimental_max_worker_delay_secs': None, '_save_checkpoints_steps': 10}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I1129 16:56:01.813140 140116568487744 tpu_context.py:220] _TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+W1129 16:56:01.813330 140116568487744 tpu_context.py:222] eval_on_tpu ignored because use_tpu is False.
+INFO:tensorflow:***** Running training *****
+I1129 16:56:01.813398 140116568487744 run_conversation.py:336] ***** Running training *****
+INFO:tensorflow:  Num examples = 100
+I1129 16:56:01.813442 140116568487744 run_conversation.py:337]   Num examples = 100
+INFO:tensorflow:  Batch size = 2
+I1129 16:56:01.813624 140116568487744 run_conversation.py:338]   Batch size = 2
+INFO:tensorflow:  Num steps = 150
+I1129 16:56:01.813669 140116568487744 run_conversation.py:339]   Num steps = 150
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W1129 16:56:01.817330 140116568487744 deprecation.py:506] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W1129 16:56:01.817550 140116568487744 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:771: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W1129 16:56:01.834273 140116568487744 deprecation.py:323] From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:771: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W1129 16:56:01.834369 140116568487744 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:748: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W1129 16:56:01.936667 140116568487744 deprecation.py:323] From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:748: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Calling model_fn.
+I1129 16:56:01.946338 140116568487744 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Running train on CPU
+I1129 16:56:01.946448 140116568487744 tpu_estimator.py:3124] Running train on CPU
+INFO:tensorflow:*** Features ***
+I1129 16:56:01.946626 140116568487744 classifier_utils.py:851] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (2, 52)
+I1129 16:56:01.946700 140116568487744 classifier_utils.py:853]   name = input_ids, shape = (2, 52)
+INFO:tensorflow:  name = input_mask, shape = (2, 52)
+I1129 16:56:01.946760 140116568487744 classifier_utils.py:853]   name = input_mask, shape = (2, 52)
+INFO:tensorflow:  name = is_real_example, shape = (2,)
+I1129 16:56:01.946813 140116568487744 classifier_utils.py:853]   name = is_real_example, shape = (2,)
+INFO:tensorflow:  name = label_ids, shape = (2,)
+I1129 16:56:01.946871 140116568487744 classifier_utils.py:853]   name = label_ids, shape = (2,)
+INFO:tensorflow:  name = segment_ids, shape = (2, 52)
+I1129 16:56:01.946941 140116568487744 classifier_utils.py:853]   name = segment_ids, shape = (2, 52)
+INFO:tensorflow:creating model from albert_config
+I1129 16:56:01.947330 140116568487744 fine_tuning_utils.py:74] creating model from albert_config
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/modeling.py:256: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W1129 16:56:02.532665 140116568487744 deprecation.py:323] From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/modeling.py:256: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W1129 16:56:02.533467 140116568487744 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:821: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W1129 16:56:02.548406 140116568487744 deprecation.py:506] From /data/eclipse-workspace/RobustEvaluation/BERTModel/ALBERT/classifier_utils.py:821: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+INFO:tensorflow:name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+I1129 16:56:02.559231 140116568487744 modeling.py:392] name bert/embeddings/word_embeddings match to bert/embeddings/word_embeddings
+INFO:tensorflow:name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+I1129 16:56:02.559304 140116568487744 modeling.py:392] name bert/embeddings/token_type_embeddings match to bert/embeddings/token_type_embeddings
+INFO:tensorflow:name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+I1129 16:56:02.559352 140116568487744 modeling.py:392] name bert/embeddings/position_embeddings match to bert/embeddings/position_embeddings
+INFO:tensorflow:name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+I1129 16:56:02.559394 140116568487744 modeling.py:392] name bert/embeddings/LayerNorm/beta match to bert/embeddings/LayerNorm/beta
+INFO:tensorflow:name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+I1129 16:56:02.559434 140116568487744 modeling.py:392] name bert/embeddings/LayerNorm/gamma match to bert/embeddings/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+I1129 16:56:02.559474 140116568487744 modeling.py:392] name bert/encoder/embedding_hidden_mapping_in/kernel match to bert/encoder/embedding_hidden_mapping_in/kernel
+INFO:tensorflow:name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+I1129 16:56:02.559514 140116568487744 modeling.py:392] name bert/encoder/embedding_hidden_mapping_in/bias match to bert/encoder/embedding_hidden_mapping_in/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+I1129 16:56:02.559558 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+I1129 16:56:02.559599 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+I1129 16:56:02.559639 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+I1129 16:56:02.559678 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+I1129 16:56:02.559718 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+I1129 16:56:02.559758 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+I1129 16:56:02.559796 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+I1129 16:56:02.559835 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+I1129 16:56:02.559874 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+I1129 16:56:02.559912 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+I1129 16:56:02.559951 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+I1129 16:56:02.559993 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+I1129 16:56:02.560031 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+I1129 16:56:02.560070 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias match to bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+I1129 16:56:02.560109 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta
+INFO:tensorflow:name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+I1129 16:56:02.560150 140116568487744 modeling.py:392] name bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma match to bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma
+INFO:tensorflow:name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+I1129 16:56:02.560189 140116568487744 modeling.py:392] name bert/pooler/dense/kernel match to bert/pooler/dense/kernel
+INFO:tensorflow:name bert/pooler/dense/bias match to bert/pooler/dense/bias
+I1129 16:56:02.560228 140116568487744 modeling.py:392] name bert/pooler/dense/bias match to bert/pooler/dense/bias
+INFO:tensorflow:name output_weights does not get matched
+I1129 16:56:02.560411 140116568487744 modeling.py:390] name output_weights does not get matched
+INFO:tensorflow:name output_bias does not get matched
+I1129 16:56:02.560470 140116568487744 modeling.py:390] name output_bias does not get matched
+INFO:tensorflow:**** Trainable Variables ****
+I1129 16:56:02.601272 140116568487744 classifier_utils.py:888] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+I1129 16:56:02.601346 140116568487744 classifier_utils.py:894]   name = bert/embeddings/word_embeddings:0, shape = (21128, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+I1129 16:56:02.601416 140116568487744 classifier_utils.py:894]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+I1129 16:56:02.601474 140116568487744 classifier_utils.py:894]   name = bert/embeddings/position_embeddings:0, shape = (512, 128), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+I1129 16:56:02.601528 140116568487744 classifier_utils.py:894]   name = bert/embeddings/LayerNorm/beta:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+I1129 16:56:02.601583 140116568487744 classifier_utils.py:894]   name = bert/embeddings/LayerNorm/gamma:0, shape = (128,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.601634 140116568487744 classifier_utils.py:894]   name = bert/encoder/embedding_hidden_mapping_in/kernel:0, shape = (128, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.601688 140116568487744 classifier_utils.py:894]   name = bert/encoder/embedding_hidden_mapping_in/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.601738 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.601791 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.601842 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.601895 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.601944 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.601998 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.602052 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602106 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/attention_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602155 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602203 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:56:02.602251 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:56:02.602308 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.602357 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602410 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/ffn_1/intermediate/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602460 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602508 140116568487744 classifier_utils.py:894]   name = bert/encoder/transformer/group_0/inner_group_0/LayerNorm_1/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:56:02.602556 140116568487744 classifier_utils.py:894]   name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:56:02.602609 140116568487744 classifier_utils.py:894]   name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (2, 768)
+I1129 16:56:02.602668 140116568487744 classifier_utils.py:894]   name = output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (2,)
+I1129 16:56:02.602730 140116568487744 classifier_utils.py:894]   name = output_bias:0, shape = (2,)
+INFO:tensorflow:++++++ warmup starts at step 0, for 15 steps ++++++
+I1129 16:56:02.607311 140116568487744 optimization.py:57] ++++++ warmup starts at step 0, for 15 steps ++++++
+INFO:tensorflow:using adamw
+I1129 16:56:02.612142 140116568487744 optimization.py:81] using adamw
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/clip_ops.py:301: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W1129 16:56:03.714412 140116568487744 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/clip_ops.py:301: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Done calling model_fn.
+I1129 16:56:04.017905 140116568487744 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I1129 16:56:04.018739 140116568487744 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I1129 16:56:04.547827 140116568487744 monitored_session.py:240] Graph was finalized.
+2020-11-29 16:56:04.548048: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-11-29 16:56:04.570380: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2899885000 Hz
+2020-11-29 16:56:04.571305: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555fcce8cf70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-29 16:56:04.571322: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+INFO:tensorflow:Running local_init_op.
+I1129 16:56:04.953124 140116568487744 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I1129 16:56:05.000534 140116568487744 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:06.478046 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 0 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:06.617065 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:Saving checkpoints for 10 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:11.609970 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 10 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-10 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:11.668673 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 2.544
+I1129 16:56:12.130012 140116568487744 tpu_estimator.py:2307] global_step/sec: 2.544
+INFO:tensorflow:examples/sec: 5.088
+I1129 16:56:12.130433 140116568487744 tpu_estimator.py:2308] examples/sec: 5.088
+INFO:tensorflow:Saving checkpoints for 20 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:14.509372 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 20 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-20 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:14.568298 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-20 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.45069
+I1129 16:56:15.027983 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.45069
+INFO:tensorflow:examples/sec: 6.90138
+I1129 16:56:15.028230 140116568487744 tpu_estimator.py:2308] examples/sec: 6.90138
+INFO:tensorflow:Saving checkpoints for 30 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:17.399709 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 30 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-30 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:17.458246 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-30 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.45478
+I1129 16:56:17.922521 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.45478
+INFO:tensorflow:examples/sec: 6.90956
+I1129 16:56:17.922713 140116568487744 tpu_estimator.py:2308] examples/sec: 6.90956
+INFO:tensorflow:Saving checkpoints for 40 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:20.295876 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 40 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-40 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:20.353920 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-40 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.45926
+I1129 16:56:20.813306 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.45926
+INFO:tensorflow:examples/sec: 6.91853
+I1129 16:56:20.813489 140116568487744 tpu_estimator.py:2308] examples/sec: 6.91853
+INFO:tensorflow:Saving checkpoints for 50 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:23.190227 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 50 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-50 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:23.249609 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-50 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.45532
+I1129 16:56:23.707392 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.45532
+INFO:tensorflow:examples/sec: 6.91065
+I1129 16:56:23.707586 140116568487744 tpu_estimator.py:2308] examples/sec: 6.91065
+INFO:tensorflow:Saving checkpoints for 60 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:26.236571 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 60 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-60 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:26.298029 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-60 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.26685
+I1129 16:56:26.768457 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.26685
+INFO:tensorflow:examples/sec: 6.5337
+I1129 16:56:26.768670 140116568487744 tpu_estimator.py:2308] examples/sec: 6.5337
+INFO:tensorflow:Saving checkpoints for 70 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:29.319415 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 70 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-70 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:29.381168 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-70 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.2366
+I1129 16:56:29.858129 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.2366
+INFO:tensorflow:examples/sec: 6.4732
+I1129 16:56:29.858345 140116568487744 tpu_estimator.py:2308] examples/sec: 6.4732
+INFO:tensorflow:Saving checkpoints for 80 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:32.403077 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 80 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-80 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:32.465583 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-80 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.24129
+I1129 16:56:32.943309 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.24129
+INFO:tensorflow:examples/sec: 6.48258
+I1129 16:56:32.943526 140116568487744 tpu_estimator.py:2308] examples/sec: 6.48258
+INFO:tensorflow:Saving checkpoints for 90 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:35.502074 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 90 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-90 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:35.562639 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-90 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.12558
+I1129 16:56:36.142813 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.12558
+INFO:tensorflow:examples/sec: 6.25116
+I1129 16:56:36.143019 140116568487744 tpu_estimator.py:2308] examples/sec: 6.25116
+INFO:tensorflow:Saving checkpoints for 100 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:38.718814 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 100 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-100 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:38.781334 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-100 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.2109
+I1129 16:56:39.257081 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.2109
+INFO:tensorflow:examples/sec: 6.4218
+I1129 16:56:39.257250 140116568487744 tpu_estimator.py:2308] examples/sec: 6.4218
+INFO:tensorflow:Saving checkpoints for 110 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:41.812012 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 110 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-110 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:41.874049 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-110 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.23669
+I1129 16:56:42.346688 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.23669
+INFO:tensorflow:examples/sec: 6.47338
+I1129 16:56:42.346905 140116568487744 tpu_estimator.py:2308] examples/sec: 6.47338
+INFO:tensorflow:Saving checkpoints for 120 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:44.910232 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 120 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-120 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:44.972868 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-120 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.22435
+I1129 16:56:45.448090 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.22435
+INFO:tensorflow:examples/sec: 6.4487
+I1129 16:56:45.448311 140116568487744 tpu_estimator.py:2308] examples/sec: 6.4487
+INFO:tensorflow:Saving checkpoints for 130 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:47.988754 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 130 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-130 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:48.050294 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-130 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.24963
+I1129 16:56:48.525359 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.24963
+INFO:tensorflow:examples/sec: 6.49927
+I1129 16:56:48.525593 140116568487744 tpu_estimator.py:2308] examples/sec: 6.49927
+INFO:tensorflow:Saving checkpoints for 140 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:51.084455 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 140 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-140 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:51.146667 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-140 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 3.23012
+I1129 16:56:51.621223 140116568487744 tpu_estimator.py:2307] global_step/sec: 3.23012
+INFO:tensorflow:examples/sec: 6.46024
+I1129 16:56:51.621433 140116568487744 tpu_estimator.py:2308] examples/sec: 6.46024
+INFO:tensorflow:Saving checkpoints for 150 into OUTBERT/douban/ALBERT/model.ckpt.
+I1129 16:56:54.176460 140116568487744 basic_session_run_hooks.py:606] Saving checkpoints for 150 into OUTBERT/douban/ALBERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/ALBERT/model.ckpt-150 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:56:54.239445 140116568487744 checkpoint_management.py:95] OUTBERT/douban/ALBERT/model.ckpt-150 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:Loss for final step: 0.77139544.
+I1129 16:56:54.470143 140116568487744 estimator.py:371] Loss for final step: 0.77139544.
+INFO:tensorflow:training_loop marked as finished
+I1129 16:56:54.470678 140116568487744 error_handling.py:101] training_loop marked as finished

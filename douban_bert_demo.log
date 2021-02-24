@@ -1,0 +1,748 @@
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/optimization.py:87: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+/home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/absl/flags/_validators.py:356: UserWarning: Flag --data_dir has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  'command line!' % flag_name)
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:1039: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:782: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W1129 16:50:48.059652 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:782: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:782: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W1129 16:50:48.059756 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:782: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+W1129 16:50:48.059966 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:778: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W1129 16:50:48.060273 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:778: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W1129 16:50:48.095550 140398408410944 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fb09b6b8510>) includes params argument, but params are not passed to Estimator.
+W1129 16:50:48.313574 140398408410944 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fb09b6b8510>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_num_worker_replicas': 1, '_log_step_count_steps': None, '_num_ps_replicas': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fb098199860>, '_save_summary_steps': 100, '_evaluation_master': '', '_tf_random_seed': None, '_master': '', '_task_id': 0, '_is_chief': True, '_service': None, '_keep_checkpoint_every_n_hours': 10000, '_model_dir': 'OUTBERT/douban/BERT', '_global_id_in_cluster': 0, '_train_distribute': None, '_save_checkpoints_steps': 10, '_keep_checkpoint_max': 0, '_experimental_distribute': None, '_protocol': None, '_cluster': None, '_tpu_config': TPUConfig(iterations_per_loop=10, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_save_checkpoints_secs': None, '_eval_distribute': None, '_experimental_max_worker_delay_secs': None, '_device_fn': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_session_creation_timeout_secs': 7200, '_task_type': 'worker'}
+I1129 16:50:48.314176 140398408410944 estimator.py:212] Using config: {'_num_worker_replicas': 1, '_log_step_count_steps': None, '_num_ps_replicas': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fb098199860>, '_save_summary_steps': 100, '_evaluation_master': '', '_tf_random_seed': None, '_master': '', '_task_id': 0, '_is_chief': True, '_service': None, '_keep_checkpoint_every_n_hours': 10000, '_model_dir': 'OUTBERT/douban/BERT', '_global_id_in_cluster': 0, '_train_distribute': None, '_save_checkpoints_steps': 10, '_keep_checkpoint_max': 0, '_experimental_distribute': None, '_protocol': None, '_cluster': None, '_tpu_config': TPUConfig(iterations_per_loop=10, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_save_checkpoints_secs': None, '_eval_distribute': None, '_experimental_max_worker_delay_secs': None, '_device_fn': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_session_creation_timeout_secs': 7200, '_task_type': 'worker'}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I1129 16:50:48.314450 140398408410944 tpu_context.py:220] _TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+W1129 16:50:48.314640 140398408410944 tpu_context.py:222] eval_on_tpu ignored because use_tpu is False.
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:887: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W1129 16:50:48.314733 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:887: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:***** Running training *****
+I1129 16:50:48.314784 140398408410944 run_conversation.py:887] ***** Running training *****
+INFO:tensorflow:  Num examples = 100
+I1129 16:50:48.314829 140398408410944 run_conversation.py:888]   Num examples = 100
+INFO:tensorflow:  Batch size = 2
+I1129 16:50:48.315016 140398408410944 run_conversation.py:889]   Batch size = 2
+INFO:tensorflow:  Num steps = 150
+I1129 16:50:48.315060 140398408410944 run_conversation.py:890]   Num steps = 150
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:507: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W1129 16:50:48.315132 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:507: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W1129 16:50:48.318153 140398408410944 deprecation.py:506] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W1129 16:50:48.318365 140398408410944 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:543: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W1129 16:50:48.335073 140398408410944 deprecation.py:323] From BERTModel/BERT/run_conversation.py:543: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W1129 16:50:48.335175 140398408410944 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W1129 16:50:48.372298 140398408410944 module_wrapper.py:139] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:523: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W1129 16:50:48.435813 140398408410944 deprecation.py:323] From BERTModel/BERT/run_conversation.py:523: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Calling model_fn.
+I1129 16:50:48.445396 140398408410944 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Running train on CPU
+I1129 16:50:48.445505 140398408410944 tpu_estimator.py:3124] Running train on CPU
+INFO:tensorflow:*** Features ***
+I1129 16:50:48.445684 140398408410944 run_conversation.py:620] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (2, 52)
+I1129 16:50:48.445761 140398408410944 run_conversation.py:622]   name = input_ids, shape = (2, 52)
+INFO:tensorflow:  name = input_mask, shape = (2, 52)
+I1129 16:50:48.445823 140398408410944 run_conversation.py:622]   name = input_mask, shape = (2, 52)
+INFO:tensorflow:  name = is_real_example, shape = (2,)
+I1129 16:50:48.445878 140398408410944 run_conversation.py:622]   name = is_real_example, shape = (2,)
+INFO:tensorflow:  name = label_ids, shape = (2,)
+I1129 16:50:48.445930 140398408410944 run_conversation.py:622]   name = label_ids, shape = (2,)
+INFO:tensorflow:  name = segment_ids, shape = (2, 52)
+I1129 16:50:48.445989 140398408410944 run_conversation.py:622]   name = segment_ids, shape = (2, 52)
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1129 16:50:48.446450 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:409: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W1129 16:50:48.447240 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:409: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:490: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W1129 16:50:48.459520 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:490: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:358: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W1129 16:50:48.475638 140398408410944 deprecation.py:506] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:358: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:671: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W1129 16:50:48.482794 140398408410944 deprecation.py:323] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/modeling.py:671: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W1129 16:50:48.483389 140398408410944 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:640: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W1129 16:50:49.538071 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:640: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From BERTModel/BERT/run_conversation.py:654: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+W1129 16:50:49.539491 140398408410944 module_wrapper.py:139] From BERTModel/BERT/run_conversation.py:654: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+INFO:tensorflow:**** Trainable Variables ****
+I1129 16:50:49.857374 140398408410944 run_conversation.py:656] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (21128, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.857498 140398408410944 run_conversation.py:662]   name = bert/embeddings/word_embeddings:0, shape = (21128, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.857577 140398408410944 run_conversation.py:662]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.857638 140398408410944 run_conversation.py:662]   name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.857695 140398408410944 run_conversation.py:662]   name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.857747 140398408410944 run_conversation.py:662]   name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.857798 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.857853 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.857903 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.857957 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858007 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858068 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858117 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858170 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858219 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858268 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.858322 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.858376 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858425 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858479 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858527 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858576 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858624 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858678 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858727 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858780 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858828 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858881 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.858930 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.858983 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859032 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859080 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.859132 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.859185 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.859233 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859286 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859335 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859384 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.859433 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859485 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.859534 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859587 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.859636 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859688 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.859736 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859789 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859837 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.859888 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.859937 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.859990 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860039 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860092 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860141 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860189 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860237 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860290 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860338 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860390 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860438 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860491 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860540 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860592 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860641 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860692 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.860740 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.860793 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.860842 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860894 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860943 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.860991 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861039 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861092 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861140 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861193 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861241 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861293 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861341 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861395 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861446 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861495 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.861543 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.861596 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861645 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861698 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861747 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861795 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861844 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861897 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.861945 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.861998 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862051 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862104 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862153 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862207 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862257 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862305 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.862352 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.862405 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862454 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862507 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862555 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862603 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862651 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862704 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862753 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862805 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862853 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.862905 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.862953 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863009 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863057 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863105 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.863153 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.863205 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.863253 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863306 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863354 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863403 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.863450 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863502 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.863551 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863602 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.863650 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863702 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.863752 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863805 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863853 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.863901 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.863949 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.864001 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864049 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864101 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864149 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864198 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864245 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864297 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864345 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864397 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864444 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864496 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864547 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864599 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864646 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864694 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.864741 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.864792 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.864840 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864891 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864938 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.864986 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865032 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865084 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865132 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865183 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865231 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865284 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865333 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865384 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865432 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865479 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.865526 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.865578 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865626 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865677 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865725 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865773 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865821 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865874 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.865923 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.865975 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866031 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866092 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866141 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866193 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866242 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866291 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.866339 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.866392 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866441 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866494 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866544 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866592 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866640 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866693 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866743 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866795 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866847 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.866900 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.866949 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867002 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867051 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867100 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1129 16:50:49.867148 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1129 16:50:49.867202 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.867250 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867302 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867352 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867401 140398408410944 run_conversation.py:662]   name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1129 16:50:49.867449 140398408410944 run_conversation.py:662]   name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1129 16:50:49.867501 140398408410944 run_conversation.py:662]   name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (2, 768)
+I1129 16:50:49.867562 140398408410944 run_conversation.py:662]   name = output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (2,)
+I1129 16:50:49.867625 140398408410944 run_conversation.py:662]   name = output_bias:0, shape = (2,)
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W1129 16:50:49.867714 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W1129 16:50:49.868112 140398408410944 module_wrapper.py:139] From /data/eclipse-workspace/RobustEvaluation/BERTModel/BERT/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W1129 16:50:49.955981 140398408410944 deprecation.py:323] From /home/lyk/anaconda3/envs/htf1/lib/python3.5/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Done calling model_fn.
+I1129 16:50:53.338218 140398408410944 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I1129 16:50:53.338956 140398408410944 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I1129 16:50:54.955888 140398408410944 monitored_session.py:240] Graph was finalized.
+2020-11-29 16:50:54.956123: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-11-29 16:50:54.978422: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2899885000 Hz
+2020-11-29 16:50:54.980442: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55faea35c790 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-29 16:50:54.980524: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-29 16:50:54.985315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-29 16:50:55.065563: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-29 16:50:55.065973: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55faea2add10 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-29 16:50:55.065989: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2070 SUPER, Compute Capability 7.5
+2020-11-29 16:50:55.066090: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-29 16:50:55.066405: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2070 SUPER major: 7 minor: 5 memoryClockRate(GHz): 1.785
+pciBusID: 0000:01:00.0
+2020-11-29 16:50:55.066477: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.066519: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.066552: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.066584: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.066617: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.066648: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:
+2020-11-29 16:50:55.068499: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-29 16:50:55.068510: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-11-29 16:50:55.068521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-29 16:50:55.068526: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-11-29 16:50:55.068530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+INFO:tensorflow:Running local_init_op.
+I1129 16:50:57.514449 140398408410944 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I1129 16:50:57.665319 140398408410944 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:51:01.366071 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 0 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:51:02.396525 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:Saving checkpoints for 10 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:51:16.855648 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 10 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-10 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:51:18.049139 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.750656
+I1129 16:51:19.736654 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.750656
+INFO:tensorflow:examples/sec: 1.50131
+I1129 16:51:19.737132 140398408410944 tpu_estimator.py:2308] examples/sec: 1.50131
+INFO:tensorflow:Saving checkpoints for 20 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:51:27.886311 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 20 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-20 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:51:28.866508 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-20 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.924261
+I1129 16:51:30.556121 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.924261
+INFO:tensorflow:examples/sec: 1.84852
+I1129 16:51:30.556256 140398408410944 tpu_estimator.py:2308] examples/sec: 1.84852
+INFO:tensorflow:Saving checkpoints for 30 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:51:38.825297 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 30 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-30 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:51:39.772099 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-30 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.916184
+I1129 16:51:41.470941 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.916184
+INFO:tensorflow:examples/sec: 1.83237
+I1129 16:51:41.471168 140398408410944 tpu_estimator.py:2308] examples/sec: 1.83237
+INFO:tensorflow:Saving checkpoints for 40 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:51:49.846116 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 40 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-40 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:51:50.769176 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-40 is not in all_model_checkpoint_paths. Manually adding it.
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 39 vs previous value: 39. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1129 16:51:51.490176 140398408410944 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 39 vs previous value: 39. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:global_step/sec: 0.913481
+I1129 16:51:52.418106 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.913481
+INFO:tensorflow:examples/sec: 1.82696
+I1129 16:51:52.418248 140398408410944 tpu_estimator.py:2308] examples/sec: 1.82696
+INFO:tensorflow:Saving checkpoints for 50 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:00.815461 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 50 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-50 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:01.785161 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-50 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.908145
+I1129 16:52:03.429614 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.908145
+INFO:tensorflow:examples/sec: 1.81629
+I1129 16:52:03.429910 140398408410944 tpu_estimator.py:2308] examples/sec: 1.81629
+INFO:tensorflow:Saving checkpoints for 60 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:11.966799 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 60 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-60 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:13.063378 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-60 is not in all_model_checkpoint_paths. Manually adding it.
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 59 vs previous value: 59. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1129 16:52:13.857280 140398408410944 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 59 vs previous value: 59. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:global_step/sec: 0.881277
+I1129 16:52:14.776700 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.881277
+INFO:tensorflow:examples/sec: 1.76255
+I1129 16:52:14.776928 140398408410944 tpu_estimator.py:2308] examples/sec: 1.76255
+INFO:tensorflow:Saving checkpoints for 70 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:23.193847 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 70 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-70 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:24.172924 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-70 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.89913
+I1129 16:52:25.898578 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.89913
+INFO:tensorflow:examples/sec: 1.79826
+I1129 16:52:25.898733 140398408410944 tpu_estimator.py:2308] examples/sec: 1.79826
+INFO:tensorflow:Saving checkpoints for 80 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:34.242098 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 80 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-80 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:35.345067 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-80 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.90385
+I1129 16:52:36.962342 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.90385
+INFO:tensorflow:examples/sec: 1.8077
+I1129 16:52:36.962542 140398408410944 tpu_estimator.py:2308] examples/sec: 1.8077
+INFO:tensorflow:Saving checkpoints for 90 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:45.324296 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 90 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-90 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:46.244599 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-90 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.919534
+I1129 16:52:47.837416 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.919534
+INFO:tensorflow:examples/sec: 1.83907
+I1129 16:52:47.843136 140398408410944 tpu_estimator.py:2308] examples/sec: 1.83907
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 95 vs previous value: 95. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1129 16:52:52.468604 140398408410944 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 95 vs previous value: 95. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 100 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:52:56.183949 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 100 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-100 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:52:57.235992 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-100 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.904289
+I1129 16:52:58.895836 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.904289
+INFO:tensorflow:examples/sec: 1.80858
+I1129 16:52:58.895996 140398408410944 tpu_estimator.py:2308] examples/sec: 1.80858
+INFO:tensorflow:Saving checkpoints for 110 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:53:07.218685 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 110 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-110 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:53:08.171211 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-110 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.921177
+I1129 16:53:09.751508 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.921177
+INFO:tensorflow:examples/sec: 1.84235
+I1129 16:53:09.751737 140398408410944 tpu_estimator.py:2308] examples/sec: 1.84235
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 112 vs previous value: 112. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1129 16:53:11.611400 140398408410944 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 112 vs previous value: 112. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 120 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:53:18.123399 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 120 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-120 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:53:19.034330 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-120 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.925221
+I1129 16:53:20.559776 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.925221
+INFO:tensorflow:examples/sec: 1.85044
+I1129 16:53:20.560030 140398408410944 tpu_estimator.py:2308] examples/sec: 1.85044
+WARNING:tensorflow:It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 120 vs previous value: 120. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+W1129 16:53:20.560106 140398408410944 basic_session_run_hooks.py:724] It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 120 vs previous value: 120. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+INFO:tensorflow:Saving checkpoints for 130 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:53:28.904959 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 130 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-130 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:53:30.058420 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-130 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.893238
+I1129 16:53:31.754958 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.893238
+INFO:tensorflow:examples/sec: 1.78648
+I1129 16:53:31.755146 140398408410944 tpu_estimator.py:2308] examples/sec: 1.78648
+INFO:tensorflow:Saving checkpoints for 140 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:53:40.085472 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 140 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-140 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:53:41.224703 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-140 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 0.892867
+I1129 16:53:42.954849 140398408410944 tpu_estimator.py:2307] global_step/sec: 0.892867
+INFO:tensorflow:examples/sec: 1.78573
+I1129 16:53:42.955070 140398408410944 tpu_estimator.py:2308] examples/sec: 1.78573
+INFO:tensorflow:Saving checkpoints for 150 into OUTBERT/douban/BERT/model.ckpt.
+I1129 16:53:51.406578 140398408410944 basic_session_run_hooks.py:606] Saving checkpoints for 150 into OUTBERT/douban/BERT/model.ckpt.
+INFO:tensorflow:OUTBERT/douban/BERT/model.ckpt-150 is not in all_model_checkpoint_paths. Manually adding it.
+I1129 16:53:52.434904 140398408410944 checkpoint_management.py:95] OUTBERT/douban/BERT/model.ckpt-150 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:Loss for final step: 0.46115363.
+I1129 16:53:53.404492 140398408410944 estimator.py:371] Loss for final step: 0.46115363.
+INFO:tensorflow:training_loop marked as finished
+I1129 16:53:53.404906 140398408410944 error_handling.py:101] training_loop marked as finished
