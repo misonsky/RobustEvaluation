@@ -7,7 +7,9 @@ This repository  contains all the code and datasets
 | Douban  | Link |
 | E-comm  | Link |
 | Ubuntu  | Link |
+
 Description:  Each dataset folder contains four different adversarial datasets.  
+The link will be made public after the paper is published  
 ### Dataset Statistics
 |  Corpus   | original | stability |  sensitivity | diversity | extensibility |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
