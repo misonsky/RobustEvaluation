@@ -23,7 +23,7 @@ parser.add_argument('--emb_path',type=str,default="embeddings",help='embeddings 
 parser.add_argument('--emb_file',type=str,default="emb.pkl",help='embeddings file')
 parser.add_argument('--lower_case',type=bool,default=True,help="lowe case for token")
 parser.add_argument('--train_files', type=str,default='train.txt',help='train data')
-parser.add_argument('--dev_files', type=str,default='test.txt',help='dev data')
+parser.add_argument('--dev_files', type=str,default='dev.txt',help='dev data')
 parser.add_argument('--test_files', type=str,default='test.txt',help='text data')
 parser.add_argument('--train_record', type=str,default='train.tfrecord',help='train recordfile')
 parser.add_argument('--dev_record', type=str,default='dev.tfrecord',help='dev recordfile')
